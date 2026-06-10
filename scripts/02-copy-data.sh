@@ -12,5 +12,5 @@ sudo chmod 750 /var/local/db_imports/
 sudo chmod 750 /var/local/db_imports/data/
 
 sudo cp ~/projects/registro_glacial/data/*.csv /var/local/db_imports/data/
-sudo chown -R karjallo:postgres /var/local/db_imports/
+sudo chown -R $(whoami):postgres /var/local/db_imports/
 sudo chmod 640 /var/local/db_imports/data/*.csv
